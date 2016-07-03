@@ -13,8 +13,8 @@ Salesforce development template 2016
 - gibo v1.0.4
 
 ## Usage
-create .env file
-```app/.env
+create .env file (app/.env)
+```
 SF_USERNAME=<SFDC USER ID>
 SF_PASSWORD=<SFDC USER PASSWORD>
 ```
@@ -28,7 +28,9 @@ $ npm install
 gulp command
 ```
 $ cd app
+// Static Resources Fild Build
 $ gulp build-staticresources
+// SFDC Deploy
 $ foreman run gulp deploy
 ```
 
