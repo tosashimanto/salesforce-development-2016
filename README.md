@@ -10,7 +10,8 @@ Salesforce development template 2016
 - MavensMate for Sublime Text v7.0.0-beta.3 ~
 - Node v6.0.0 ~
 - npm v3.6.0 ~
-- gibo v1.0.4
+- gibo v1.0.4 ~
+- foreman v0.81.0 ~
 
 ## Usage
 create .env file (app/.env)
