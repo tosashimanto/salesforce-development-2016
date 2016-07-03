@@ -2,9 +2,9 @@
 Salesforce development template 2016
 
 ## Table of Contents
-- [Requirements](#Requirements)
-- [Usage](#Usage)
-- [Link](#Link)
+- [Requirements](#requirements)
+- [Usage](#usage)
+- [Link](#link)
 
 ## Requirements
 - MavensMate for Sublime Text v7.0.0-beta.3 ~
