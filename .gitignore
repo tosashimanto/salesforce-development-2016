@@ -1,6 +1,9 @@
 ### MaventsMate Settings Folder
 config/
 
+### Settings File
+.env
+
 ### https://raw.github.com/github/gitignore/c608298e61930c0d8f72b31921df7dcaed18a28a/Global/OSX.gitignore
 
 .DS_Store
