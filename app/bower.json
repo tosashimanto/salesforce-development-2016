@@ -17,6 +17,9 @@
     "tests"
   ],
   "dependencies": {
-    "salesforce-lightning-design-system": "^2.0.2"
+    "salesforce-lightning-design-system": "^2.0.2",
+    "angular": "^1.5.7",
+    "angular-route": "^1.5.7",
+    "angular-messages": "^1.5.7"
   }
 }

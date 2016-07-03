@@ -1,0 +1,49 @@
+<apex:page showHeader="false" applyHtmlTag="false" applyBodyTag="false" standardStylesheets="false">
+    <div xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <!-- Header -->
+        <div class="slds-page-header" role="banner">
+            <div class="slds-media slds-media--center">
+                <div class="slds-media__figure">
+                    <svg aria-hidden="true" class="slds-icon slds-icon-standard-account">
+                        <use xlink:href="{!URLFOR($Resource.SLDS202, '/assets/icons/standard-sprite/svg/symbols.svg#account')}"></use>
+                    </svg>
+                </div>
+                <div class="slds-media__body">
+                    <p class="slds-page-header__title slds-truncate slds-align-middle" title="{!$ObjectType.Account.Label}">{!$ObjectType.Account.Label}</p>
+                    <p class="slds-text-body--small page-header__info">Salesforce × AngularJs</p>
+                </div>
+            </div>
+        </div>
+        <!-- Content -->
+        <div>
+            <table class="slds-table slds-table--bordered slds-table--cell-buffer">
+                <thead>
+                    <tr class="slds-text-heading--label">
+                        <th scope="col" title="{!$ObjectType.Account.Fields.Name.Label}">
+                            <div class="slds-truncate">{!$ObjectType.Account.Fields.Name.Label}</div>
+                        </th>
+                        <th scope="col" title="{!$ObjectType.Account.Fields.AccountNumber.Label}">
+                            <div class="slds-truncate">{!$ObjectType.Account.Fields.AccountNumber.Label}</div>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="item in results">
+                        <th scope="row" data-label="{!$ObjectType.Account.Fields.Name.Label}" title="{{item.Name}}">
+                            <div class="slds-truncate">
+                                <a href="javascript:void(0);">
+                                    <span ng-bind="item.Name" />
+                                </a>
+                            </div>
+                        </th>
+                        <td data-label="{!$ObjectType.Account.Fields.AccountNumber.Label}" title="{{item.AccountNumber}}">
+                            <div class="slds-truncate">
+                                <span ng-bind="item.AccountNumber" />
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</apex:page>

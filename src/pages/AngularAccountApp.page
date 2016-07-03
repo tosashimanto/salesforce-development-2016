@@ -1,0 +1,17 @@
+<apex:page controller="AngularAccountController" showHeader="false" sidebar="false" standardStylesheets="fales" title="Angular Account App" id="page">
+    <!-- CSS & JavaScript -->
+    <apex:stylesheet value="{!URLFOR($Resource.SLDS202, 'assets/styles/salesforce-lightning-design-system.min.css')}" />
+    <apex:includeScript value="{!URLFOR($Resource.AngularLib, 'angular/angular.min.js')}" />
+    <apex:includeScript value="{!URLFOR($Resource.AngularLib, 'angular-route/angular-route.js')}" />
+    <apex:includeScript value="{!URLFOR($Resource.AngularLib, 'angular-messages/angular-messages.min.js')}" />
+    <!-- App -->
+    <div xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <div class="slds" ng-app="myApp">
+            <div ng-view="true" autoscroll="true"></div>
+        </div>
+    </div>
+    <!-- AngularJs -->
+    <apex:includeScript value="{!URLFOR($Resource.AngularAccountAppLib, 'app.js')}" />
+    <apex:includeScript value="{!URLFOR($Resource.AngularAccountAppLib, 'controllers.js')}" />
+    <apex:includeScript value="{!URLFOR($Resource.AngularAccountAppLib, 'services.js')}" />
+</apex:page>
