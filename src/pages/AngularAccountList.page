@@ -1,4 +1,4 @@
-<apex:page showHeader="false" applyHtmlTag="false" applyBodyTag="false" standardStylesheets="false">
+<apex:page showHeader="false" standardStylesheets="false" applyHtmlTag="false" applyBodyTag="false">
     <div xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <!-- Header -->
         <div class="slds-page-header" role="banner">
