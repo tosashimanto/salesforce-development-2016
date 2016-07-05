@@ -55,5 +55,12 @@ $ cd app
 $ cd bower install
 ```
 
+Salesforce Metadata Export (Force.com CLI)
+```
+$ cd app
+$ force login
+$ force export
+```
+
 ## Link
 - http://tyoshikawa1106.hatenablog.com/entry/2016/07/03/162802
