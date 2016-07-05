@@ -1,0 +1,9 @@
+.siteNavi {
+  z-index: 1;
+  min-width: 100px;
+}
+
+.siteMain {
+  z-index: 0;
+  min-width: 600px;
+}
