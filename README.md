@@ -14,13 +14,13 @@ Salesforce development template 2016
 - foreman v0.81.0 ~
 
 ## Usage
-create .env file (app/.env)
+### create .env file (app/.env)
 ```
 SF_USERNAME=<SFDC USER ID>
 SF_PASSWORD=<SFDC USER PASSWORD>
 ```
 
-write app/pkg/package.xml  
+### write package.xml (app/pkg/package.xml)  
 - members = deploy target file name
 ```
 <?xml version="1.0" encoding="UTF-8"?>
@@ -34,13 +34,13 @@ write app/pkg/package.xml
 
 ```
 
-npm install
+### npm install
 ```
 $ cd app
 $ npm install
 ```
 
-gulp command
+### gulp command
 ```
 $ cd app
 // Static Resources Fild Build
@@ -49,13 +49,13 @@ $ gulp build-staticresources
 $ foreman run gulp deploy
 ```
 
-bower support
+### bower support
 ```
 $ cd app
 $ cd bower install
 ```
 
-Salesforce Metadata Export (Force.com CLI)
+### Salesforce Metadata Export (Force.com CLI)
 ```
 $ cd app
 $ force login
