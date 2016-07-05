@@ -20,6 +20,20 @@ SF_USERNAME=<SFDC USER ID>
 SF_PASSWORD=<SFDC USER PASSWORD>
 ```
 
+write app/pkg/package.xml  
+- members = deploy target file name
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <types>
+        <members>YOUR_MEMBERS</members>
+        <name>StaticResource</name>
+    </types>
+    <version>37.0</version>
+</Package>
+
+```
+
 npm install
 ```
 $ cd app
